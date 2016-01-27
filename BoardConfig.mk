@@ -46,7 +46,7 @@ TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1  androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
@@ -197,3 +197,27 @@ endif
 endif
 
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
+
+# Block_Build
+Bliss_Build_Block:=1
+
+# Blissful building options
+BLISSIFY := true
+BLISS_O3 := false
+BLISS_GRAPHITE := false
+BLISS_STRICT := false
+BLISS_KRAIT := true
+BLISS_PIPE := true
+#FLOOP_NEST_OPTIMIZE := true
+#ENABLE_GCCONLY := true
+#TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+#FAST_MATH := true
+#ENABLE_MODULAR_O3 := true
+#ENABLE_LTO := true
+#LINK_TIME_OPTIMIZATIONS := true
+#TARGET_USE_ION_COMPAT := true
+#TARGET_USE_KRAIT_PLD_SET := true
+TARGET_TC_ROM := 4.9-linaro
+TARGET_TC_KERNEL := 4.9-linaro
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
