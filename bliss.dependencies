@@ -30,12 +30,6 @@
     "revision": "cm-13.0"
   },
   {
-    "repository": "Elite-Kernels/Linaro-5.3",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-5.3-linaro",
-    "remote": "github",
-    "revision": "master"
-  },
-  {
     "repository": "sultanxda/patcher",
     "target_path": "patcher",
     "remote": "github",
