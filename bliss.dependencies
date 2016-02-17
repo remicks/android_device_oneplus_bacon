@@ -15,7 +15,7 @@
     "repository": "andip71/boeffla-kernel-cm-bacon",
     "target_path": "kernel/oneplus/msm8974",
     "remote": "github",
-    "revision": "boeffla_v5_cm"
+    "revision": "boeffla_v5_cm_series5.0"
   },
   {
     "repository": "android_device_oppo_msm8974-common",
