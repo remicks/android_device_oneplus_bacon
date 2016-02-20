@@ -30,7 +30,7 @@
     "revision": "cm-13.0"
   },
   {
-    "repository": "sultanxda/patcher",
+    "repository": "remicks/patcher",
     "target_path": "patcher",
     "remote": "github",
     "revision": "cm-13.0-bacon"
