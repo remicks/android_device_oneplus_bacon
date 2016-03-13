@@ -12,10 +12,10 @@
     "revision": "cm-13.0"
   },
   {
-    "repository": "andip71/boeffla-kernel-cm-bacon",
+    "repository": "remicks/boeffla-kernel-cm-bacon",
     "target_path": "kernel/oneplus/msm8974",
     "remote": "github",
-    "revision": "boeffla_v5_cm_series5.0"
+    "revision": "v5-stable"
   },
   {
     "repository": "android_device_oppo_msm8974-common",
